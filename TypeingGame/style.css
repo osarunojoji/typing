@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-image: url("./kowai.jpeg");
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ready{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px;
+  height: 150px;
+}
+
+.imgArea{
+  position: absolute; 
+  top: 5px;
+  width: 75%;
+  height: 45%;
+  bottom: 0;
+  left: 3px;
+  border-radius: 20px;
+}
+
+#titleStr{
+    color: rgb(0, 255, 30);
+    font-size: 50px;
+}
+
+#readyStr{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+ 
+h2{
+    color: rgb(51, 30, 170);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+marquee{
+  height: 100%;
+  width: 100%;
+}
+
+.frame{
+    background-color: #feb645;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.typeDisplay{
+    background-color: aqua;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    bottom: 0;
+    left: 3px;
+    width: 75%;
+    height: 40%;
+    width: 75%;
+    height: 43.3%;
+    border-radius: 20px;
+}
+
+.timer{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+meter{
+  width: 95%;
+}
+
+.state{
+  background-color: aqua;
+  border-radius: 20px;
+  position: absolute;
+  height: 90%;
+  width: 20%;
+  top: 3%;
+  left: 78.8%;
+}
+
+#misusitakazu{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#korositakazu{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#rennzokuseikousuu{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#tuginobuki{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#missNum{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#killNum{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#successionSuccessNum{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* 点滅部分 */
+@keyframes blinking {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.blink {
+	animation: blinking 1.2s ease-in-out infinite alternate;
+}
+
+/*開始ボタン部分*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.btn,
+a.btn,
+button.btn {
+  margin: 20rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 10rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-radius-solid {
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1e767), to(#feb645));
+    background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
+    background: linear-gradient(to bottom, #f1e767 0%, #feb645 100%);
+  }
+  a.btn-radius-solid:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#f1e767), to(#feb645));
+    background: -webkit-linear-gradient(bottom, #f1e767 0%, #feb645 100%);
+    background: linear-gradient(to top, #f1e767 0%, #feb645 100%);
+  }
+
+  /*タイトルに戻るボタン部分*/
+  .btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: #000;  
+  top: 95%;
+  left: 90%;
+  position:absolute;
+}
+
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background:#000;
+  transition: .2s;
+}
+
+.btn-border-bottom:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
